@@ -1,16 +1,18 @@
+- name: Copy backend files
+  become: true
+  copy:
+    src: artifact.tar.gz
+    dest: /home/ubuntu/artifact.tar.gz
+
 - name: "Unzip backend files to correct directory"
   shell: |
-    cd ~/backend
+    cd /home/ubuntu/
     tar -xvzf artifact.tar.gz
-    echo 'hereeeee'
     
 - name: "Install dependencies for project and start app"
   shell: |
-    cd ~/backend
     npm install
 
 - name: "Start backend app"
   shell: |
-    cd ~/backend
-    pm2 stop default
-    pm2 start npm -- start
+    pm2 start npm -- run start
