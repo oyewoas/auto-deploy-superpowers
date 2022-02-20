@@ -4,7 +4,4 @@ https://app.circleci.com/pipelines/github/oyewoas/auto-deploy-superpowers
 
 
 2. Public URL for your S3 Bucket (aka, your front-end). [URL02]
-http://udapeople-f55aec1.s3-website-us-east-1.amazonaws.com/
-
-3. Public URL for your CLOUDFRONT (aka, your front-end). [URL03]
-http://d1e58p4d3zi3b.cloudfront.net/
+http://udapeople-648e557.s3-website-us-east-1.amazonaws.com/
